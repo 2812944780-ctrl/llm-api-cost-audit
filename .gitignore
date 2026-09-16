@@ -6,3 +6,4 @@ venv/
 usage.log
 .env
 .DS_Store
+web-articles/
