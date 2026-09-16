@@ -5,7 +5,7 @@
 > 大多数"账单对不上"，**不是被多扣了钱，而是你的估算方式本身是错的**。
 > 这个工具用**记录**取代**猜测**。
 
-[English →](README.md) · [Claude Code](docs/claude-code.md) · [Codex CLI](docs/codex-cli.md) · [CC Switch](docs/cc-switch.md) · [错误码排查](docs/errors.md) · [流式排错](docs/streaming.md)
+[English →](README.md) · [深空 API 接入](docs/using-deep-space-api.md) · [Claude Code](docs/claude-code.md) · [Codex CLI](docs/codex-cli.md) · [CC Switch](docs/cc-switch.md) · [错误码排查](docs/errors.md) · [流式排错](docs/streaming.md)
 
 > 本仓库不提供免费额度或试用额度。请使用你已经信任的接口；选择付费方案前，先核对当天价格、限制和计费规则。
 
@@ -47,6 +47,7 @@ pip install -r requirements.txt
 - Node.js 18+：`examples/nodejs/chat-completion.mjs`
 - Linux/macOS curl：`examples/curl/chat-completion.sh`
 - Windows PowerShell：`examples/curl/chat-completion.ps1`
+- [深空 API 接入](docs/using-deep-space-api.md)
 - [Claude Code 配置检查](docs/claude-code.md)
 - [Codex CLI 配置检查](docs/codex-cli.md)
 - [CC Switch 配置检查](docs/cc-switch.md)

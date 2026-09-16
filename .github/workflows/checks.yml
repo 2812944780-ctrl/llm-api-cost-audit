@@ -1,0 +1,20 @@
+name: checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile Python sources
+        run: python -m compileall -q audit examples
+      - name: Generate sample log
+        run: python examples/make_sample_log.py
+      - name: Render audit report
+        run: python -m audit report sample-usage.jsonl --json || test $? -eq 1

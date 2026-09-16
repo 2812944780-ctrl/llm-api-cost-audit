@@ -4,7 +4,7 @@ Log real `usage` data from any **OpenAI-compatible** endpoint, then surface the 
 
 > Most "my bill doesn't match my estimate" problems are **not** overcharging. They come from **how you estimate**. This toolkit replaces guessing with recorded facts.
 
-[中文说明 →](README.zh-CN.md) · [Claude Code](docs/claude-code.md) · [Codex CLI](docs/codex-cli.md) · [CC Switch](docs/cc-switch.md) · [Errors](docs/errors.md) · [Streaming](docs/streaming.md)
+[中文说明 →](README.zh-CN.md) · [Deep Space API setup](docs/using-deep-space-api.md) · [Claude Code](docs/claude-code.md) · [Codex CLI](docs/codex-cli.md) · [CC Switch](docs/cc-switch.md) · [Errors](docs/errors.md) · [Streaming](docs/streaming.md)
 
 > This repository does not provide free credits or trial quotas. Use an endpoint you already trust, or choose a paid plan after checking its current price, limits, and billing rules.
 
@@ -48,6 +48,7 @@ No third-party dependencies beyond the `openai` SDK.
 - Node.js 18+: `examples/nodejs/chat-completion.mjs`
 - curl on Linux/macOS: `examples/curl/chat-completion.sh`
 - PowerShell on Windows: `examples/curl/chat-completion.ps1`
+- [Deep Space API setup](docs/using-deep-space-api.md)
 - [Claude Code configuration checks](docs/claude-code.md)
 - [Codex CLI configuration checks](docs/codex-cli.md)
 - [CC Switch configuration checks](docs/cc-switch.md)
