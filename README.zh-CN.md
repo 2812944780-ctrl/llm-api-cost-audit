@@ -5,7 +5,9 @@
 > 大多数"账单对不上"，**不是被多扣了钱，而是你的估算方式本身是错的**。
 > 这个工具用**记录**取代**猜测**。
 
-[English →](README.md)
+[English →](README.md) · [Claude Code 检查清单](docs/claude-code.md) · [Codex CLI 检查清单](docs/codex-cli.md)
+
+> 本仓库不提供免费额度或试用额度。请使用你已经信任的接口；选择付费方案前，先核对当天价格、限制和计费规则。
 
 ---
 

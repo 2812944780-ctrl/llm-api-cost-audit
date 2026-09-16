@@ -4,7 +4,9 @@ Log real `usage` data from any **OpenAI-compatible** endpoint, then surface the 
 
 > Most "my bill doesn't match my estimate" problems are **not** overcharging. They come from **how you estimate**. This toolkit replaces guessing with recorded facts.
 
-[中文说明 →](README.zh-CN.md)
+[中文说明 →](README.zh-CN.md) · [Claude Code checks](docs/claude-code.md) · [Codex CLI checks](docs/codex-cli.md)
+
+> This repository does not provide free credits or trial quotas. Use an endpoint you already trust, or choose a paid plan after checking its current price, limits, and billing rules.
 
 ---
 
