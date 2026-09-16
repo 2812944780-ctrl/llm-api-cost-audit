@@ -5,7 +5,7 @@
 > 大多数"账单对不上"，**不是被多扣了钱，而是你的估算方式本身是错的**。
 > 这个工具用**记录**取代**猜测**。
 
-[English →](README.md) · [Claude Code 检查清单](docs/claude-code.md) · [Codex CLI 检查清单](docs/codex-cli.md)
+[English →](README.md) · [Claude Code](docs/claude-code.md) · [Codex CLI](docs/codex-cli.md) · [CC Switch](docs/cc-switch.md) · [错误码排查](docs/errors.md) · [流式排错](docs/streaming.md)
 
 > 本仓库不提供免费额度或试用额度。请使用你已经信任的接口；选择付费方案前，先核对当天价格、限制和计费规则。
 
@@ -39,6 +39,21 @@ pip install -r requirements.txt
 ```
 
 除 `openai` SDK 外无第三方依赖。
+
+## 示例与文档
+
+- Python SDK：`examples/basic_usage.py`
+- Python 标准库：`examples/python/chat_completion.py`
+- Node.js 18+：`examples/nodejs/chat-completion.mjs`
+- Linux/macOS curl：`examples/curl/chat-completion.sh`
+- Windows PowerShell：`examples/curl/chat-completion.ps1`
+- [Claude Code 配置检查](docs/claude-code.md)
+- [Codex CLI 配置检查](docs/codex-cli.md)
+- [CC Switch 配置检查](docs/cc-switch.md)
+- [HTTP 错误排查](docs/errors.md)
+- [流式响应排错](docs/streaming.md)
+
+所有示例都从环境变量读取凭据，不会把 Key 写入文件。
 
 ---
 
