@@ -1,10 +1,12 @@
 # LLM API Cost Audit
 
-Log real `usage` data from any **OpenAI-compatible** endpoint, then surface the three most common sources of hidden cost.
+> Record real usage. Find hidden cost. Keep your API bill explainable.
 
-> Most "my bill doesn't match my estimate" problems are **not** overcharging. They come from **how you estimate**. This toolkit replaces guessing with recorded facts.
+A small, local-first toolkit for auditing token usage from any **OpenAI-compatible** endpoint. It catches retry double-billing, changing prompt size, and context-heavy requests before they become recurring surprises.
 
-[中文说明 →](README.zh-CN.md) · [Deep Space API setup](docs/using-deep-space-api.md) · [Claude Code](docs/claude-code.md) · [Codex CLI](docs/codex-cli.md) · [CC Switch](docs/cc-switch.md) · [Errors](docs/errors.md) · [Streaming](docs/streaming.md)
+[![CI](https://github.com/2812944780-ctrl/llm-api-cost-audit/actions/workflows/checks.yml/badge.svg)](https://github.com/2812944780-ctrl/llm-api-cost-audit/actions/workflows/checks.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+[中文说明 →](README.zh-CN.md) · [Deep Space API setup](docs/using-deep-space-api.md) · [Client matrix](docs/client-matrix.md) · [FAQ](docs/faq.md) · [Architecture](docs/architecture.md)
 
 > This repository does not provide free credits or trial quotas. Use an endpoint you already trust, or choose a paid plan after checking its current price, limits, and billing rules.
 
@@ -41,6 +43,16 @@ pip install -r requirements.txt
 
 No third-party dependencies beyond the `openai` SDK.
 
+## What is included
+
+| Area | Included |
+|---|---|
+| Record | model, prompt/completion/total tokens, finish reason, request ID, tags |
+| Detect | retry double-billing, prompt-token variance, context bloat |
+| Run | Python SDK, Python stdlib, Node.js 18+, curl, PowerShell |
+| Configure | Claude Code, Codex CLI, CC Switch, Cherry Studio |
+| Operate | CLI reports, JSON output, CI gate, redacted issue templates |
+
 ## Examples and guides
 
 - Python SDK: `examples/basic_usage.py`
@@ -48,12 +60,17 @@ No third-party dependencies beyond the `openai` SDK.
 - Node.js 18+: `examples/nodejs/chat-completion.mjs`
 - curl on Linux/macOS: `examples/curl/chat-completion.sh`
 - PowerShell on Windows: `examples/curl/chat-completion.ps1`
+- Environment templates: `examples/configs/`
 - [Deep Space API setup](docs/using-deep-space-api.md)
+- [Client matrix](docs/client-matrix.md)
 - [Claude Code configuration checks](docs/claude-code.md)
 - [Codex CLI configuration checks](docs/codex-cli.md)
 - [CC Switch configuration checks](docs/cc-switch.md)
+- [Cherry Studio configuration checks](docs/cherry-studio.md)
 - [HTTP error troubleshooting](docs/errors.md)
 - [Streaming troubleshooting](docs/streaming.md)
+- [FAQ](docs/faq.md)
+- [Architecture](docs/architecture.md)
 
 All examples read credentials from environment variables. They do not write keys to files.
 

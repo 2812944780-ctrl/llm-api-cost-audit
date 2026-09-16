@@ -1,11 +1,12 @@
 # LLM API 成本审计
 
-记录任意 **OpenAI 兼容**接口的真实 `usage` 数据，揪出三个最容易被忽略的隐性成本来源。
+> 记录真实用量，定位隐性成本，让 API 账单可以解释。
 
-> 大多数"账单对不上"，**不是被多扣了钱，而是你的估算方式本身是错的**。
-> 这个工具用**记录**取代**猜测**。
+一个小型、本地优先的 **OpenAI 兼容接口**用量审计工具。它能发现重复重试、提示词大小漂移和上下文膨胀，避免成本问题长期积累。
 
-[English →](README.md) · [深空 API 接入](docs/using-deep-space-api.md) · [Claude Code](docs/claude-code.md) · [Codex CLI](docs/codex-cli.md) · [CC Switch](docs/cc-switch.md) · [错误码排查](docs/errors.md) · [流式排错](docs/streaming.md)
+[![CI](https://github.com/2812944780-ctrl/llm-api-cost-audit/actions/workflows/checks.yml/badge.svg)](https://github.com/2812944780-ctrl/llm-api-cost-audit/actions/workflows/checks.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+[English →](README.md) · [深空 API 接入](docs/using-deep-space-api.md) · [客户端矩阵](docs/client-matrix.md) · [FAQ](docs/faq.md) · [架构](docs/architecture.md)
 
 > 本仓库不提供免费额度或试用额度。请使用你已经信任的接口；选择付费方案前，先核对当天价格、限制和计费规则。
 
@@ -40,6 +41,16 @@ pip install -r requirements.txt
 
 除 `openai` SDK 外无第三方依赖。
 
+## 包含什么
+
+| 领域 | 内容 |
+|---|---|
+| 记录 | model、输入/输出/总 Token、finish reason、请求 ID、标签 |
+| 检测 | 重试重复计费、prompt Token 波动、上下文膨胀 |
+| 运行 | Python SDK、Python 标准库、Node.js 18+、curl、PowerShell |
+| 配置 | Claude Code、Codex CLI、CC Switch、Cherry Studio |
+| 运维 | CLI 报告、JSON 输出、CI 卡口、脱敏 Issue 模板 |
+
 ## 示例与文档
 
 - Python SDK：`examples/basic_usage.py`
@@ -47,12 +58,17 @@ pip install -r requirements.txt
 - Node.js 18+：`examples/nodejs/chat-completion.mjs`
 - Linux/macOS curl：`examples/curl/chat-completion.sh`
 - Windows PowerShell：`examples/curl/chat-completion.ps1`
+- 环境变量模板：`examples/configs/`
 - [深空 API 接入](docs/using-deep-space-api.md)
+- [客户端矩阵](docs/client-matrix.md)
 - [Claude Code 配置检查](docs/claude-code.md)
 - [Codex CLI 配置检查](docs/codex-cli.md)
 - [CC Switch 配置检查](docs/cc-switch.md)
+- [Cherry Studio 配置检查](docs/cherry-studio.md)
 - [HTTP 错误排查](docs/errors.md)
 - [流式响应排错](docs/streaming.md)
+- [FAQ](docs/faq.md)
+- [架构说明](docs/architecture.md)
 
 所有示例都从环境变量读取凭据，不会把 Key 写入文件。
 
