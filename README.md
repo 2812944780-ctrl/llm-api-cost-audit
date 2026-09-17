@@ -8,7 +8,15 @@ A small, local-first toolkit for auditing token usage from any **OpenAI-compatib
 
 [中文说明 →](README.zh-CN.md) · [Deep Space API setup](docs/using-deep-space-api.md) · [Client matrix](docs/client-matrix.md) · [FAQ](docs/faq.md) · [Architecture](docs/architecture.md)
 
-> This repository does not provide free credits or trial quotas. Use an endpoint you already trust, or choose a paid plan after checking its current price, limits, and billing rules.
+## Deep Space API: GitHub welcome credit
+
+Register at [Deep Space API](https://api.91kun.top), then join the support QQ group **1041569325** to apply for **CNY 2 in API usage credit**. Each user may claim it **once**.
+
+In your group join request, write `GitHub + your site user ID or nickname` (Chinese format: `GitHub + 站内用户ID或昵称`). Registration alone does not automatically grant credit; apply through the support group. Never include your API key or password.
+
+[Setup and first request](docs/using-deep-space-api.md) · [中文活动说明](README.zh-CN.md)
+
+The toolkit remains usable with your existing OpenAI-compatible endpoint. Check current model availability, pricing, and plan limits on the site; no cache hit rate is guaranteed.
 
 ---
 

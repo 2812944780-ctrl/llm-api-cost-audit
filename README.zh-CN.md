@@ -8,7 +8,13 @@
 
 [English →](README.md) · [深空 API 接入](docs/using-deep-space-api.md) · [客户端矩阵](docs/client-matrix.md) · [FAQ](docs/faq.md) · [架构](docs/architecture.md)
 
-> 本仓库不提供免费额度或试用额度。请使用你已经信任的接口；选择付费方案前，先核对当天价格、限制和计费规则。
+## 深空 API：GitHub 用户领取 2 元额度
+
+从 GitHub 来的用户，在 [深空 API 官网](https://api.91kun.top) 注册后，加入售后 QQ 群 **1041569325**，申请领取 **2 元站内 API 使用额度，每个用户限领一次**。
+
+入群申请请填写：`GitHub + 站内用户ID或昵称`。例如 `GitHub + 12345`，其中 `12345` 替换成你自己的站内用户 ID。不是注册自动到账，需要通过售后群申请；不要填写 API Key 或密码。
+
+[查看接入步骤与首次调用示例](docs/using-deep-space-api.md)。本工具仍支持你已有的 OpenAI 兼容接口，不强制使用深空 API。模型、价格和套餐限制以站内当天页面为准，不承诺缓存命中率。
 
 ---
 
