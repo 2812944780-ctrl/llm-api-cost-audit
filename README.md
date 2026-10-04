@@ -4,9 +4,9 @@
 
 A small, local-first toolkit for auditing token usage from any **OpenAI-compatible** endpoint. It catches retry double-billing, changing prompt size, and context-heavy requests before they become recurring surprises.
 
-[![CI](https://github.com/2812944780-ctrl/llm-api-cost-audit/actions/workflows/checks.yml/badge.svg)](https://github.com/2812944780-ctrl/llm-api-cost-audit/actions/workflows/checks.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![CI](https://github.com/2812944780-ctrl/llm-api-cost-audit/actions/workflows/checks.yml/badge.svg)](https://github.com/2812944780-ctrl/llm-api-cost-audit/actions/workflows/checks.yml) [![Release](https://img.shields.io/github/v/release/2812944780-ctrl/llm-api-cost-audit)](https://github.com/2812944780-ctrl/llm-api-cost-audit/releases) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-[中文说明 →](README.zh-CN.md) · [Deep Space API setup](docs/using-deep-space-api.md) · [Client matrix](docs/client-matrix.md) · [FAQ](docs/faq.md) · [Architecture](docs/architecture.md)
+[Documentation site →](https://2812944780-ctrl.github.io/llm-api-cost-audit/) · [中文说明 →](README.zh-CN.md) · [Deep Space API setup](docs/using-deep-space-api.md) · [Client matrix](docs/client-matrix.md) · [FAQ](docs/faq.md) · [Architecture](docs/architecture.md) · [Changelog](CHANGELOG.md)
 
 ## Deep Space API: GitHub welcome credit
 

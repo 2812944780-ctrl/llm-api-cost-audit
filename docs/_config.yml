@@ -1,0 +1,3 @@
+title: LLM API Cost Audit
+description: Local-first token usage and billing audit for OpenAI-compatible LLM APIs
+theme: jekyll-theme-minimal
